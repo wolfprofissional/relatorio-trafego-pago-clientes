@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cativar Odontopediatria · Relatórios de tráfego pago</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#0F5C63;--teal2:#167A83;--coral:#F2785C;--sun:#F6C453;--mint:#7FCDBB;--ink:#1D2B33;--muted:#66757E;--bg:#F5F9F8;--card:#fff;--line:#E1EBEA;--good:#1E8E5A;--bad:#C0392B}
+*{box-sizing:border-box} html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Nunito',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:15.5px;line-height:1.55}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header.hero{background:var(--teal);color:#fff;padding:34px 0 64px;position:relative;overflow:hidden}
+header.hero::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;border-radius:50%;background:var(--teal2);opacity:.6}
+.hero-top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;position:relative;z-index:1}
+.brand{font-weight:900;font-size:clamp(26px,4vw,34px);letter-spacing:-.01em;line-height:1}
+.brand small{display:block;font-weight:700;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--sun);margin-top:6px}
+.period{text-align:right;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#CDE7E5}
+.period b{display:block;font-size:28px;letter-spacing:0;text-transform:none;color:#fff;font-weight:800}
+.hero h1{font-weight:900;font-size:clamp(28px,4.4vw,42px);margin:30px 0 8px;line-height:1.12;position:relative;z-index:1;max-width:20ch}
+.hero p.lead{margin:0;max-width:62ch;color:#DDF0EE;font-size:16.5px;position:relative;z-index:1}
+.hero p.lead b{color:var(--sun)}
+section{padding:34px 0 6px}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--coral);font-weight:800;margin:0 0 6px}
+h2{font-weight:900;font-size:clamp(23px,3vw,30px);color:var(--teal);margin:0 0 6px;line-height:1.2}
+.sub{color:var(--muted);margin:0 0 18px;max-width:72ch}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:14px;margin-top:-40px;position:relative;z-index:2}
+.kpi{background:var(--card);border-radius:18px;padding:18px;border:1px solid var(--line);box-shadow:0 8px 26px rgba(15,92,99,.08)}
+.kpi.main{background:var(--coral);color:#fff;border-color:var(--coral)}
+.k-lab{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0;font-weight:700}
+.kpi.main .k-lab{color:#FFE6DF}
+.k-num{font-weight:900;font-size:clamp(26px,2.6vw,34px);margin:4px 0 2px;line-height:1.1;font-variant-numeric:tabular-nums;white-space:nowrap}
+.k-note{font-size:12.5px;margin:0;color:var(--muted)} .kpi.main .k-note{color:#FFE6DF}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:16px}
+.card h3{margin:0 0 4px;font-size:17px;color:var(--teal);font-weight:800}
+.note{font-size:13px;color:var(--muted);margin:12px 0 0}
+.note b{color:var(--ink)}
+.mix{display:flex;height:34px;border-radius:999px;overflow:hidden;gap:3px;margin:14px 0 10px}
+.mix-leg{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px 20px;font-size:14px}
+.mix-leg i{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:7px;vertical-align:-1px}
+.insights{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:14px;margin-bottom:16px}
+.ins{background:var(--teal);color:#fff;border-radius:18px;padding:18px}
+.ins .big{font-weight:900;font-size:32px;color:var(--sun);line-height:1;margin:0 0 6px}
+.ins p{margin:0;font-size:14px;color:#DDF0EE} .ins p b{color:#fff}
+table{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
+th,td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th:first-child,td:first-child,th:nth-child(2),td:nth-child(2),th:nth-child(3),td:nth-child(3){text-align:left}
+th{font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:800}
+.st{font-size:11px;font-weight:800;padding:2px 8px;border-radius:99px}
+.st.on{background:#DDF3EC;color:#17694F} .st.off{background:#EEF1F2;color:#6B7880}
+tr.best td{background:#FFF6E0}
+.gb-row{display:grid;grid-template-columns:minmax(110px,170px) 1fr;gap:12px;align-items:center;padding:5px 0}
+.gb-lab{font-size:13.5px;font-weight:700;color:var(--teal);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gb-lab.me{color:var(--coral)}
+.bar{position:relative;height:26px;background:#EEF4F3;border-radius:999px;overflow:hidden}
+.fill{position:absolute;inset:0 auto 0 0;border-radius:999px;opacity:.9}
+.val{position:relative;font-size:12.5px;padding:4px 11px;display:block;white-space:nowrap;font-variant-numeric:tabular-nums}
+.analysis{background:var(--teal);color:#E6F3F2;border-radius:22px;padding:30px clamp(18px,4vw,40px);margin-top:10px}
+.analysis h2{color:#fff} .analysis .eyebrow{color:var(--sun)}
+.analysis h3{color:var(--sun);font-size:20px;font-weight:900;margin:26px 0 8px}
+.analysis p,.analysis li{color:#DDF0EE} .analysis b{color:#fff}
+.analysis ol{padding-left:0;list-style:none;counter-reset:a;margin:0}
+.analysis ol li{counter-increment:a;position:relative;padding:12px 0 12px 46px;border-bottom:1px solid rgba(255,255,255,.14)}
+.analysis ol li::before{content:counter(a);position:absolute;left:0;top:12px;width:30px;height:30px;border-radius:50%;background:var(--sun);color:var(--teal);font-weight:900;display:flex;align-items:center;justify-content:center;font-size:14px}
+.prio{display:inline-block;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:800;padding:2px 8px;border-radius:99px;margin-left:6px;vertical-align:2px}
+.prio.alta{background:var(--coral);color:#fff} .prio.media{background:var(--sun);color:var(--teal)}
+footer{padding:34px 0 40px;color:var(--muted);font-size:12.5px;text-align:center}
+@media (max-width:640px){ .opt{display:none} th,td{padding:9px 5px;font-size:13px} .period{text-align:left} }
+@media print{ body{background:#fff} .card,.kpi{break-inside:avoid} }
+
+.list{display:grid;gap:12px;margin:-30px 0 40px;position:relative;z-index:2}
+.rep{display:flex;justify-content:space-between;align-items:center;gap:16px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px;text-decoration:none;color:var(--ink);box-shadow:0 8px 26px rgba(15,92,99,.08)}
+.rep:hover{border-color:var(--coral)}
+.rep b{font-size:22px;color:var(--teal);font-weight:900} .rep span{color:var(--muted);font-size:13.5px}
+.rep .go{color:var(--coral);font-weight:800;white-space:nowrap}
+</style></head><body>
+<header class="hero"><div class="wrap">
+  <div class="brand">Cativar<small>Odontopediatria</small></div>
+  <h1>Relatórios de tráfego pago</h1>
+  <p class="lead">Resultados mensais das campanhas da Cativar no Google Ads.</p>
+</div></header>
+<main class="wrap"><div class="list">
+  <a class="rep" href="outubro-2026.html"><div><b>Outubro 2026</b><br><span>11 conversas no WhatsApp · R$ 79,32 por conversa · R$ 872,54 investidos</span></div><span class="go">Abrir →</span></a>
+</div></main>
+<footer>Relatórios atualizados mensalmente.</footer>
+</body></html>

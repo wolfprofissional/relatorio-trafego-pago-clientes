@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cativar Odontopediatria · Relatório de tráfego pago · Outubro 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#0F5C63;--teal2:#167A83;--coral:#F2785C;--sun:#F6C453;--mint:#7FCDBB;--ink:#1D2B33;--muted:#66757E;--bg:#F5F9F8;--card:#fff;--line:#E1EBEA;--good:#1E8E5A;--bad:#C0392B}
+*{box-sizing:border-box} html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Nunito',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:15.5px;line-height:1.55}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header.hero{background:var(--teal);color:#fff;padding:34px 0 64px;position:relative;overflow:hidden}
+header.hero::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;border-radius:50%;background:var(--teal2);opacity:.6}
+.hero-top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;position:relative;z-index:1}
+.brand{font-weight:900;font-size:clamp(26px,4vw,34px);letter-spacing:-.01em;line-height:1}
+.brand small{display:block;font-weight:700;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--sun);margin-top:6px}
+.period{text-align:right;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#CDE7E5}
+.period b{display:block;font-size:28px;letter-spacing:0;text-transform:none;color:#fff;font-weight:800}
+.hero h1{font-weight:900;font-size:clamp(28px,4.4vw,42px);margin:30px 0 8px;line-height:1.12;position:relative;z-index:1;max-width:20ch}
+.hero p.lead{margin:0;max-width:62ch;color:#DDF0EE;font-size:16.5px;position:relative;z-index:1}
+.hero p.lead b{color:var(--sun)}
+section{padding:34px 0 6px}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--coral);font-weight:800;margin:0 0 6px}
+h2{font-weight:900;font-size:clamp(23px,3vw,30px);color:var(--teal);margin:0 0 6px;line-height:1.2}
+.sub{color:var(--muted);margin:0 0 18px;max-width:72ch}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:14px;margin-top:-40px;position:relative;z-index:2}
+.kpi{background:var(--card);border-radius:18px;padding:18px;border:1px solid var(--line);box-shadow:0 8px 26px rgba(15,92,99,.08)}
+.kpi.main{background:var(--coral);color:#fff;border-color:var(--coral)}
+.k-lab{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0;font-weight:700}
+.kpi.main .k-lab{color:#FFE6DF}
+.k-num{font-weight:900;font-size:clamp(26px,2.6vw,34px);margin:4px 0 2px;line-height:1.1;font-variant-numeric:tabular-nums;white-space:nowrap}
+.k-note{font-size:12.5px;margin:0;color:var(--muted)} .kpi.main .k-note{color:#FFE6DF}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:16px}
+.card h3{margin:0 0 4px;font-size:17px;color:var(--teal);font-weight:800}
+.note{font-size:13px;color:var(--muted);margin:12px 0 0}
+.note b{color:var(--ink)}
+.mix{display:flex;height:34px;border-radius:999px;overflow:hidden;gap:3px;margin:14px 0 10px}
+.mix-leg{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px 20px;font-size:14px}
+.mix-leg i{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:7px;vertical-align:-1px}
+.insights{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:14px;margin-bottom:16px}
+.ins{background:var(--teal);color:#fff;border-radius:18px;padding:18px}
+.ins .big{font-weight:900;font-size:32px;color:var(--sun);line-height:1;margin:0 0 6px}
+.ins p{margin:0;font-size:14px;color:#DDF0EE} .ins p b{color:#fff}
+table{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
+th,td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th:first-child,td:first-child,th:nth-child(2),td:nth-child(2),th:nth-child(3),td:nth-child(3){text-align:left}
+th{font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:800}
+.st{font-size:11px;font-weight:800;padding:2px 8px;border-radius:99px}
+.st.on{background:#DDF3EC;color:#17694F} .st.off{background:#EEF1F2;color:#6B7880}
+tr.best td{background:#FFF6E0}
+.gb-row{display:grid;grid-template-columns:minmax(110px,170px) 1fr;gap:12px;align-items:center;padding:5px 0}
+.gb-lab{font-size:13.5px;font-weight:700;color:var(--teal);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gb-lab.me{color:var(--coral)}
+.bar{position:relative;height:26px;background:#EEF4F3;border-radius:999px;overflow:hidden}
+.fill{position:absolute;inset:0 auto 0 0;border-radius:999px;opacity:.9}
+.val{position:relative;font-size:12.5px;padding:4px 11px;display:block;white-space:nowrap;font-variant-numeric:tabular-nums}
+.analysis{background:var(--teal);color:#E6F3F2;border-radius:22px;padding:30px clamp(18px,4vw,40px);margin-top:10px}
+.analysis h2{color:#fff} .analysis .eyebrow{color:var(--sun)}
+.analysis h3{color:var(--sun);font-size:20px;font-weight:900;margin:26px 0 8px}
+.analysis p,.analysis li{color:#DDF0EE} .analysis b{color:#fff}
+.analysis ol{padding-left:0;list-style:none;counter-reset:a;margin:0}
+.analysis ol li{counter-increment:a;position:relative;padding:12px 0 12px 46px;border-bottom:1px solid rgba(255,255,255,.14)}
+.analysis ol li::before{content:counter(a);position:absolute;left:0;top:12px;width:30px;height:30px;border-radius:50%;background:var(--sun);color:var(--teal);font-weight:900;display:flex;align-items:center;justify-content:center;font-size:14px}
+.prio{display:inline-block;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:800;padding:2px 8px;border-radius:99px;margin-left:6px;vertical-align:2px}
+.prio.alta{background:var(--coral);color:#fff} .prio.media{background:var(--sun);color:var(--teal)}
+footer{padding:34px 0 40px;color:var(--muted);font-size:12.5px;text-align:center}
+@media (max-width:640px){ .opt{display:none} th,td{padding:9px 5px;font-size:13px} .period{text-align:left} }
+@media print{ body{background:#fff} .card,.kpi{break-inside:avoid} }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-top">
+      <div class="brand">Cativar<small>Odontopediatria</small></div>
+      <div class="period">Relatório de tráfego pago · Google Ads<b>Outubro 2026</b></div>
+    </div>
+    <h1>11 famílias chamaram no WhatsApp pelo Google</h1>
+    <p class="lead">Em outubro, a Cativar investiu <b>R$ 872,54</b> no Google Ads e recebeu <b>11 conversas no WhatsApp</b>, a <b>R$ 79,32</b> cada. Além delas, o anúncio gerou 2 ligações e 3 pedidos de rota até a clínica.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="kpis">
+    <div class="kpi main"><p class="k-lab">Conversas no WhatsApp</p><p class="k-num">11</p><p class="k-note">17,5% de quem clicou</p></div>
+    <div class="kpi main"><p class="k-lab">Custo por conversa</p><p class="k-num">R$ 79,32</p><p class="k-note">média do mês</p></div>
+    <div class="kpi"><p class="k-lab">Investimento</p><p class="k-num">R$ 872,54</p><p class="k-note">35% do orçamento de R$ 80,00/dia</p></div>
+    <div class="kpi"><p class="k-lab">Cliques</p><p class="k-num">63</p><p class="k-note">CTR 7,9% · CPC R$ 13,85</p></div>
+    <div class="kpi"><p class="k-lab">Presença nas buscas</p><p class="k-num">78%</p><p class="k-note">no topo da página em 92%</p></div>
+  </div>
+
+  <section id="contatos">
+    <p class="eyebrow">Contatos</p>
+    <h2>Como as famílias entraram em contato</h2>
+    <p class="sub">Todas as formas de contato que o Google registrou a partir dos anúncios em outubro.</p>
+    <div class="card">
+      <div class="mix"><span style="flex:11;background:#F2785C" title="Conversas no WhatsApp: 11"></span><span style="flex:2;background:#F6C453" title="Ligações pelo anúncio: 2"></span><span style="flex:3;background:#7FCDBB" title="Pedidos de rota até a clínica: 3"></span></div><ul class="mix-leg"><li><i style="background:#F2785C"></i><b>11</b> Conversas no WhatsApp</li><li><i style="background:#F6C453"></i><b>2</b> Ligações pelo anúncio</li><li><i style="background:#7FCDBB"></i><b>3</b> Pedidos de rota até a clínica</li></ul>
+      <p class="note">Só as conversas no WhatsApp entram hoje na contagem principal da campanha. As 2 ligações e os 3 pedidos de rota também são famílias interessadas, mas o Google não as considera ao ajustar os lances. O anúncio também gerou 8 outras interações com o perfil da clínica no Google (como abrir fotos e horários).</p>
+    </div>
+  </section>
+
+  <section id="palavras">
+    <p class="eyebrow">Palavras-chave</p>
+    <h2>O que os pais pesquisaram</h2>
+    <p class="sub">Palavras com gasto em outubro, da maior para a menor verba. A linha em destaque é a de menor custo por conversa entre as buscas gerais.</p>
+    <div class="insights">
+      <div class="ins"><p class="big">R$ 29,00</p><p>por conversa em <b>[odontopediatra belo horizonte]</b>, a melhor busca geral do mês: 3 conversas com R$ 87,01.</p></div>
+      <div class="ins"><p class="big">R$ 32,90</p><p>por conversa nas buscas por <b>procedimentos</b>: língua presa, frenectomia e laserterapia trouxeram 3 conversas com R$ 98,69.</p></div>
+      <div class="ins"><p class="big">35%</p><p>da verba (R$ 301,45) foi para palavras que <b>não trouxeram conversas</b> e depois foram pausadas.</p></div>
+    </div>
+    <div class="card">
+      <div style="overflow-x:auto"><table>
+        <thead><tr><th>Palavra-chave</th><th class="opt">Tipo</th><th class="opt">Status</th><th>Cliques</th><th>Custo</th><th>Conversas</th><th>Custo/conversa</th></tr></thead>
+        <tbody><tr><td>&quot;odonto pediatra infantil&quot;</td><td class='opt'>Frase</td><td class='opt'><span class="st on">Ativa</span></td><td>17</td><td>R$ 230,95</td><td>2</td><td><b>R$ 115,48</b></td></tr><tr><td>&quot;odontopediatra bh&quot;</td><td class='opt'>Frase</td><td class='opt'><span class="st off">Pausada</span></td><td>13</td><td>R$ 196,26</td><td>0</td><td><b>—</b></td></tr><tr><td>&quot;dentista infantil perto de mim&quot;</td><td class='opt'>Frase</td><td class='opt'><span class="st on">Ativa</span></td><td>9</td><td>R$ 135,21</td><td>2</td><td><b>R$ 67,61</b></td></tr><tr class='best'><td>[odontopediatra belo horizonte]</td><td class='opt'>Exata</td><td class='opt'><span class="st on">Ativa</span></td><td>7</td><td>R$ 87,01</td><td>3</td><td><b>R$ 29,00</b></td></tr><tr><td>&quot;Frenectomia lingual&quot;</td><td class='opt'>Frase</td><td class='opt'><span class="st on">Ativa</span></td><td>4</td><td>R$ 65,18</td><td>1</td><td><b>R$ 65,18</b></td></tr><tr><td>&quot;clinica odontopediatria bh&quot;</td><td class='opt'>Frase</td><td class='opt'><span class="st off">Pausada</span></td><td>3</td><td>R$ 38,13</td><td>0</td><td><b>—</b></td></tr><tr><td>[odontopediatria bh]</td><td class='opt'>Exata</td><td class='opt'><span class="st off">Pausada</span></td><td>3</td><td>R$ 32,08</td><td>0</td><td><b>—</b></td></tr><tr><td>&quot;aparelho dental para criança&quot;</td><td class='opt'>Frase</td><td class='opt'><span class="st off">Pausada</span></td><td>1</td><td>R$ 25,94</td><td>0</td><td><b>—</b></td></tr><tr><td>&quot;clínica cativar&quot;</td><td class='opt'>Frase</td><td class='opt'><span class="st on">Ativa</span></td><td>2</td><td>R$ 19,23</td><td>1</td><td><b>R$ 19,23</b></td></tr><tr><td>&quot;Cirurgia da língua presa&quot;</td><td class='opt'>Frase</td><td class='opt'><span class="st on">Ativa</span></td><td>1</td><td>R$ 19,08</td><td>1</td><td><b>R$ 19,08</b></td></tr><tr><td>&quot;laserterapia infantil&quot;</td><td class='opt'>Frase</td><td class='opt'><span class="st on">Ativa</span></td><td>1</td><td>R$ 14,43</td><td>1</td><td><b>R$ 14,43</b></td></tr><tr><td>Outras 2 palavras pausadas</td><td class='opt'>Frase</td><td class='opt'><span class="st off">Pausada</span></td><td>2</td><td>R$ 9,04</td><td>0</td><td><b>—</b></td></tr></tbody>
+      </table></div>
+      <p class="note">A palavra que mais gastou, “odonto pediatra infantil”, trouxe 2 conversas a R$ 115,48 cada, quatro vezes o custo da busca exata por “odontopediatra belo horizonte”.</p>
+    </div>
+  </section>
+
+  <section id="publico">
+    <p class="eyebrow">Público</p>
+    <h2>Quem chamou no WhatsApp</h2>
+    <div class="grid2">
+      <div class="card">
+        <h3>Por idade</h3>
+        <p class="note" style="margin:0 0 10px">Conversas · custo por conversa</p>
+        <div class="gb-row"><div class="gb-lab">18 a 24</div><div class="bar"><span class="fill" style="width:0.0%;background:#F2785C"></span><span class="val"><b>0</b> · R$ 7,49 sem contato</span></div></div><div class="gb-row"><div class="gb-lab">25 a 34</div><div class="bar"><span class="fill" style="width:66.7%;background:#F2785C"></span><span class="val"><b>2</b> · R$ 57,30</span></div></div><div class="gb-row"><div class="gb-lab">35 a 44</div><div class="bar"><span class="fill" style="width:100.0%;background:#F2785C"></span><span class="val"><b>3</b> · R$ 101,22</span></div></div><div class="gb-row"><div class="gb-lab">45 a 54</div><div class="bar"><span class="fill" style="width:100.0%;background:#F2785C"></span><span class="val"><b>3</b> · R$ 32,75</span></div></div><div class="gb-row"><div class="gb-lab">55 a 64</div><div class="bar"><span class="fill" style="width:33.3%;background:#F2785C"></span><span class="val"><b>1</b> · R$ 83,13</span></div></div><div class="gb-row"><div class="gb-lab">65 +</div><div class="bar"><span class="fill" style="width:0.0%;background:#F2785C"></span><span class="val"><b>0</b> · sem veiculação</span></div></div><div class="gb-row"><div class="gb-lab">Não informada</div><div class="bar"><span class="fill" style="width:66.7%;background:#F2785C"></span><span class="val"><b>2</b> · R$ 132,71</span></div></div>
+        <p class="note">Pais e mães de 25 a 44 anos somaram 5 conversas. A faixa de 45 a 54 anos teve o menor custo (R$ 32,75), possivelmente avós ou pais de crianças mais velhas.</p>
+      </div>
+      <div class="card">
+        <h3>Por renda familiar</h3>
+        <p class="note" style="margin:0 0 10px">Conversas · custo por conversa</p>
+        <div class="gb-row"><div class="gb-lab">10% com maior renda</div><div class="bar"><span class="fill" style="width:100.0%;background:#167A83"></span><span class="val"><b>4</b> · R$ 56,38</span></div></div><div class="gb-row"><div class="gb-lab">11% a 20%</div><div class="bar"><span class="fill" style="width:25.0%;background:#167A83"></span><span class="val"><b>1</b> · R$ 119,98</span></div></div><div class="gb-row"><div class="gb-lab">21% a 30%</div><div class="bar"><span class="fill" style="width:75.0%;background:#167A83"></span><span class="val"><b>3</b> · R$ 41,57</span></div></div><div class="gb-row"><div class="gb-lab">31% a 40%</div><div class="bar"><span class="fill" style="width:0.0%;background:#167A83"></span><span class="val"><b>0</b> · R$ 112,47 sem contato</span></div></div><div class="gb-row"><div class="gb-lab">Não informada</div><div class="bar"><span class="fill" style="width:75.0%;background:#167A83"></span><span class="val"><b>3</b> · R$ 96,62</span></div></div>
+        <p class="note">Os 10% de maior renda trouxeram 4 conversas, e a faixa de 21% a 30% teve o menor custo (R$ 41,57). A faixa de 31% a 40% gastou R$ 112,47 sem conversas. As faixas abaixo de 40% já estão excluídas.</p>
+      </div>
+    </div>
+    <p class="note">Com 11 conversas no mês, cada faixa tem poucos casos. Por isso, essas diferenças são uma tendência a acompanhar, não uma conclusão.</p>
+  </section>
+
+  <section id="concorrencia">
+    <p class="eyebrow">Concorrência</p>
+    <h2>A Cativar domina as buscas em que aparece</h2>
+    <p class="sub">Parcela de impressões: em quantas das buscas em que a Cativar poderia aparecer cada clínica apareceu.</p>
+    <div class="card">
+      <div class="gb-row"><div class="gb-lab me">Cativar (você)</div><div class="bar"><span class="fill" style="width:77.8%;background:#0F5C63"></span><span class="val"><b>78%</b> das buscas</span></div></div><div class="gb-row"><div class="gb-lab">vitacea.com.br</div><div class="bar"><span class="fill" style="width:15.8%;background:#B9CDD0"></span><span class="val"><b>16%</b> das buscas</span></div></div><div class="gb-row"><div class="gb-lab">draelisamarotta.com.br</div><div class="bar"><span class="fill" style="width:14.7%;background:#B9CDD0"></span><span class="val"><b>15%</b> das buscas</span></div></div>
+      <p class="note">A Cativar aparece em 78% das buscas, cinco vezes mais que qualquer concorrente, e em 70% das vezes fica em 1º lugar. Outras clínicas com menos de 10% de presença: villaodontologia, redeodonto, nucleoodontologicosorriso, dentista24horas e dramilenamenezzes.</p>
+    </div>
+  </section>
+
+  <section id="analise">
+    <div class="analysis">
+      <p class="eyebrow">Análise e próximos passos</p>
+      <h2>O que aprendemos em outubro</h2>
+      <p>A campanha converte bem: 17,5% de quem clica chama no WhatsApp, e a Cativar já aparece na maioria das buscas da região. O limite hoje não é a concorrência, e sim o volume: a campanha gastou só 35% do orçamento disponível, porque poucas buscas acionam os anúncios e o Google indica que a estratégia de lances está limitando a veiculação.</p>
+
+      <h3>Pontos de atenção</h3>
+      <ul>
+        <li><b>Orçamento sobrando.</b> Dos R$ 2.480,00 disponíveis no mês, foram usados R$ 872,54 (média de R$ 28,15 por dia).</li>
+        <li><b>Ligações fora da contagem.</b> As 2 ligações pelo anúncio não entram como conversão principal, então o Google não aprende com elas.</li>
+        <li><b>Verba em palavras sem retorno.</b> R$ 301,45 foram para palavras que não converteram, como “odontopediatra bh” (R$ 196,26, 13 cliques e nenhuma conversa).</li>
+        <li><b>Marca pouco protegida.</b> “cativar odontopediatria” aparece como raramente exibida, e o nome da doutora está pausado.</li>
+      </ul>
+
+      <h3>Plano de ação para novembro</h3>
+      <ol>
+        <li><b>Destravar a estratégia de lances</b><span class="prio alta">Alta</span><br>Revisar o limite de CPC da estratégia, que hoje restringe a veiculação. Com a taxa de conversão atual, vale testar a estratégia Maximizar conversões sem meta de custo por 3 a 4 semanas, ou subir o CPC máximo para perto de R$ 20.</li>
+        <li><b>Contar ligações como conversão</b><span class="prio alta">Alta</span><br>Marcar “Ligações pelo anúncio” como conversão principal, junto com o WhatsApp, para o Google buscar mais famílias que preferem ligar.</li>
+        <li><b>Criar um grupo só de procedimentos</b><span class="prio alta">Alta</span><br>Língua presa, frenectomia, laserterapia e sedação trouxeram conversas a cerca de R$ 32,90. Separar essas buscas em um grupo próprio, com anúncios que falem de cada procedimento, e adicionar variações como “teste da linguinha”, “freio lingual bebê” e “pique na língua”.</li>
+        <li><b>Ampliar as buscas exatas que convertem</b><span class="prio media">Média</span><br>Seguir o modelo de [odontopediatra belo horizonte] (R$ 29,00 por conversa) com [odontopediatra bh], [dentista infantil bh], [dentista de criança bh] e [odontopediatra pampulha].</li>
+        <li><b>Revisar “odonto pediatra infantil”</b><span class="prio media">Média</span><br>Foi a palavra que mais gastou, a R$ 115,48 por conversa. Conferir os termos de pesquisa, negativar o que não é paciente (como curso, faculdade, emprego e salário) e reduzir o lance.</li>
+        <li><b>Proteger a marca</b><span class="prio media">Média</span><br>Adicionar [cativar], [clinica cativar] e [cativar odontopediatria] em correspondência exata e reativar o nome da doutora. São buscas baratas, de quem já conhece a clínica.</li>
+        <li><b>Completar o anúncio</b><span class="prio media">Média</span><br>Conferir se estão ativos a extensão de ligação, a de local (ligada ao Perfil da Empresa no Google) e sitelinks por procedimento. Os pedidos de rota mostram que muitos pais procuram a clínica no mapa.</li>
+      </ol>
+    </div>
+  </section>
+</main>
+
+<footer>
+  Dados do Google Ads (rede de pesquisa), campanha [Cativar Odontopediatria] [Search] [Geral], de 1º a 31 de outubro de 2026.<br>
+  “Conversas” são as conversões de WhatsApp registradas pela campanha. Ligações e rotas são contadas à parte pelo Google.
+</footer>
+</body>
+</html>
