@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Refúgio Vet · Outubro 2026 · Relatório de tráfego pago</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>:root{--navy:#13294B;--navy2:#1F3B66;--red:#C8393A;--red2:#E05A4F;--sky:#7FA6D3;--soft:#E7EDF5;--ink:#1C2533;--muted:#677284;--bg:#F6F4F1;--card:#fff;--line:#E5E2DC;--good:#1E8E5A;--bad:#C0392B}
+*{box-sizing:border-box} html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Nunito Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:15.5px;line-height:1.55}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header.hero{background:var(--navy);color:#fff;padding:34px 0 64px;position:relative;overflow:hidden}
+header.hero::after{content:"";position:absolute;right:-90px;top:-90px;width:300px;height:300px;border-radius:50%;background:var(--navy2);opacity:.7}
+.hero-top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;position:relative;z-index:1}
+.brand{font-family:'Lora',Georgia,serif;font-weight:700;font-size:clamp(26px,4vw,34px);line-height:1}
+.brand small{display:block;font-family:'Nunito Sans',sans-serif;font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#F29A92;margin-top:8px}
+.period{text-align:right;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#B9C8DE}
+.period b{display:block;font-size:28px;letter-spacing:0;text-transform:none;color:#fff;font-weight:800}
+.hero h1{font-family:'Lora',Georgia,serif;font-weight:700;font-size:clamp(28px,4.4vw,42px);margin:30px 0 10px;line-height:1.15;position:relative;z-index:1;max-width:22ch}
+.hero p.lead{margin:0;max-width:66ch;color:#D7E0EE;font-size:16.5px;position:relative;z-index:1}
+.hero p.lead b{color:#fff}
+section{padding:34px 0 6px}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--red);font-weight:800;margin:0 0 6px}
+h2{font-family:'Lora',Georgia,serif;font-weight:700;font-size:clamp(23px,3vw,30px);color:var(--navy);margin:0 0 6px;line-height:1.2}
+.sub{color:var(--muted);margin:0 0 18px;max-width:74ch}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:14px;margin-top:-40px;position:relative;z-index:2}
+.kpi{background:var(--card);border-radius:18px;padding:18px;border:1px solid var(--line);box-shadow:0 8px 26px rgba(19,41,75,.08)}
+.kpi.main{background:var(--red);color:#fff;border-color:var(--red)}
+.k-lab{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0;font-weight:700}
+.kpi.main .k-lab{color:#FFDCD6}
+.k-num{font-weight:800;font-size:clamp(26px,2.6vw,34px);margin:4px 0 2px;line-height:1.1;font-variant-numeric:tabular-nums;white-space:nowrap}
+.k-note{font-size:12.5px;margin:0;color:var(--muted)} .kpi.main .k-note{color:#FFDCD6}
+.delta{font-weight:800;font-size:12.5px}
+.delta.good{color:var(--good)} .delta.bad{color:var(--bad)} .delta.neutral{color:var(--navy)}
+.vs{color:var(--muted);font-size:12px}
+.kpi.main .delta{color:#fff;background:rgba(255,255,255,.18);padding:1px 7px;border-radius:99px} .kpi.main .vs{color:#FFDCD6}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:16px}
+.card h3{margin:0 0 4px;font-size:17px;color:var(--navy);font-weight:800}
+.note{font-size:13px;color:var(--muted);margin:12px 0 0}
+.note b{color:var(--ink)}
+.channel{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px}
+.ch{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;border-top:4px solid var(--red)}
+.ch.g{border-top-color:var(--navy)} .ch.s{border-top-color:var(--sky)}
+.ch h3{margin:0 0 2px;font-size:16.5px;color:var(--navy)}
+.ch p{margin:0;color:var(--muted);font-size:13.5px}
+.ch .c-stats{margin:14px 0 0}
+.c-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 16px}
+.c-stats div{background:#F8F6F2;border-radius:10px;padding:9px}
+.c-stats dt{font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.c-stats dd{margin:2px 0 0;font-weight:800;font-size:15px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.sec-band{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:46px 0 0;padding:14px 18px;border-radius:14px;background:var(--red);color:#fff}
+.sec-band.g{background:var(--navy)}
+.sec-band b{font-family:'Lora',Georgia,serif;font-size:24px;font-weight:700}
+.sec-band span{color:#FFE3DE;font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+.sec-band.g span{color:#B9C8DE}
+.camp h3{margin:0 0 12px;font-size:17px;color:var(--navy)}
+.camp .c-tag{display:inline-block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:99px;margin-bottom:10px;font-weight:800}
+.fn-step{margin:8px 0}
+.fn-bar{color:#fff;border-radius:8px;padding:6px 12px;min-width:64px;font-variant-numeric:tabular-nums}
+.fn-lab{font-size:13px;color:var(--ink);margin-top:3px}
+.fn-rate{color:var(--muted);margin-left:8px;font-size:12px}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin:0 0 10px}
+.legend i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.tick{font-size:12px;fill:var(--muted);font-family:inherit}
+.tick2{font-size:11.5px;fill:var(--navy);font-family:inherit;font-weight:700}
+.insights{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:14px;margin-bottom:16px}
+.ins{background:var(--navy);color:#fff;border-radius:18px;padding:18px}
+.ins .big{font-family:'Lora',Georgia,serif;font-weight:700;font-size:32px;color:#F29A92;line-height:1;margin:0 0 6px}
+.ins p{margin:0;font-size:14px;color:#D7E0EE} .ins p b{color:#fff}
+table{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
+th,td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th:first-child,td:first-child,th:nth-child(2),td:nth-child(2){text-align:left}
+th{font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:800}
+tr.best td{background:#FDECEA}
+.gb-row{display:grid;grid-template-columns:minmax(70px,90px) 1fr;gap:12px;align-items:center;padding:5px 0}
+.gb-lab{font-size:13.5px;font-weight:700;color:var(--navy);white-space:nowrap}
+.bar{position:relative;height:26px;background:#F1EEE9;border-radius:999px;overflow:hidden}
+.fill{position:absolute;inset:0 auto 0 0;border-radius:999px;opacity:.85}
+.val{position:relative;font-size:12.5px;padding:4px 11px;display:block;white-space:nowrap;font-variant-numeric:tabular-nums}
+.crs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:14px}
+.cr{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;break-inside:avoid}
+.cr-thumb{position:relative;aspect-ratio:4/5;background:linear-gradient(160deg,var(--navy2),var(--navy));display:flex;align-items:center;justify-content:center}
+.cr-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.cr-ph{color:#F29A92;font-family:'Lora',Georgia,serif;font-size:21px;text-align:center;padding:16px}
+.cr-tag{position:absolute;left:10px;top:10px;z-index:2;background:var(--red);color:#fff;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;border-radius:99px}
+.cr-body{padding:14px 14px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.cr-camp{margin:0;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--red);font-weight:800}
+.cr h4{margin:0;font-size:16px;color:var(--navy)}
+.cr-copy{margin:0;font-size:12.5px;color:var(--muted);font-style:italic}
+.cr-stats{display:grid;grid-template-columns:1fr 1fr;gap:6px 10px;margin:6px 0 0}
+.cr-stats dt{font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.cr-stats dd{margin:0;font-weight:800;font-variant-numeric:tabular-nums}
+.cr-foot{margin:auto 0 0;padding-top:8px;font-size:12px;color:var(--ink);border-top:1px dashed var(--line)}
+.analysis{background:var(--navy);color:#D7E0EE;border-radius:22px;padding:30px clamp(18px,4vw,40px);margin-top:10px}
+.analysis h2{color:#fff} .analysis .eyebrow{color:#F29A92}
+.analysis h3{font-family:'Lora',Georgia,serif;color:#F29A92;font-size:20px;margin:26px 0 8px}
+.analysis p,.analysis li{color:#D7E0EE} .analysis b{color:#fff}
+.analysis ol{padding-left:0;list-style:none;counter-reset:a;margin:0}
+.analysis ol li{counter-increment:a;position:relative;padding:12px 0 12px 46px;border-bottom:1px solid rgba(255,255,255,.14)}
+.analysis ol li::before{content:counter(a);position:absolute;left:0;top:12px;width:30px;height:30px;border-radius:50%;background:var(--red);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px}
+.prio{display:inline-block;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:800;padding:2px 8px;border-radius:99px;margin-left:6px;vertical-align:2px}
+.prio.alta{background:var(--red);color:#fff} .prio.media{background:#F29A92;color:var(--navy)}
+footer{padding:34px 0 40px;color:var(--muted);font-size:12.5px;text-align:center}
+@media (max-width:640px){ .c-stats div{min-width:0;padding:7px} .c-stats dt{font-size:9.5px;letter-spacing:.02em;overflow-wrap:normal} .opt{display:none} th,td{padding:9px 5px;font-size:13px} .period{text-align:left} .c-stats dd{font-size:14px} }
+@media print{ body{background:#fff} .card,.kpi,.cr{break-inside:avoid} }
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+  <div class="hero-top">
+    <div class="brand">Refúgio Vet<small>Atendimento veterinário domiciliar</small></div>
+    <div class="period">Relatório de tráfego pago · Meta e Google<b>Outubro 2026</b></div>
+  </div>
+  <h1>96 tutores chamaram a Dra. Greici no WhatsApp</h1>
+  <p class="lead">Em outubro, as campanhas de contato receberam <b>96 conversas</b> (73 pelo Meta e 23 pelo Google, que entrou no ar em 15/10), a <b>R$ 16,29</b> cada. A campanha de seguidores levou <b>3.621 pessoas</b> ao perfil do Instagram, a R$ 0,29 por visita.</p>
+</div></header>
+
+<main class="wrap">
+  <div class="kpis">
+    <div class="kpi main"><p class="k-lab">Conversas no WhatsApp</p><p class="k-num">96</p><p class="k-note">Meta + Google</p></div>
+    <div class="kpi main"><p class="k-lab">Custo por conversa</p><p class="k-num">R$ 16,29</p><p class="k-note">média dos dois canais</p></div>
+    <div class="kpi"><p class="k-lab">Visitas ao Instagram</p><p class="k-num">3.621</p><p class="k-note">R$ 0,29 por visita</p></div>
+    <div class="kpi"><p class="k-lab">Investimento total</p><p class="k-num">R$ 2.600,56</p><p class="k-note">contatos R$ 1.563,58 · seguidores R$ 1.036,98</p></div>
+  </div>
+
+  <section id="canais">
+    <p class="eyebrow">Visão geral</p>
+    <h2>Três frentes, cada uma com um papel</h2>
+    <p class="sub">O Google aparece para quem já está procurando um veterinário em casa. No Meta, uma campanha leva direto ao WhatsApp e a outra apresenta a Dra. Greici para novas pessoas no Instagram.</p>
+    <div class="channel">
+      <div class="ch"><h3>Meta · Contato no WhatsApp</h3><p>Anúncio que abre a conversa direto</p>
+        <dl class="c-stats"><div><dt>Investimento</dt><dd>R$ 787,28</dd></div><div><dt>Conversas</dt><dd>73</dd></div><div><dt>Custo/<wbr>conversa</dt><dd>R$ 10,78</dd></div></dl></div>
+      <div class="ch g"><h3>Google · Pesquisa</h3><p>Botões de WhatsApp do site · desde 15/10</p>
+        <dl class="c-stats"><div><dt>Investimento</dt><dd>R$ 776,30</dd></div><div><dt>Contatos</dt><dd>23</dd></div><div><dt>Custo/<wbr>contato</dt><dd>R$ 33,75</dd></div></dl></div>
+      <div class="ch s"><h3>Meta · Seguidores</h3><p>Tráfego para o perfil do Instagram</p>
+        <dl class="c-stats"><div><dt>Investimento</dt><dd>R$ 1.036,98</dd></div><div><dt>Visitas</dt><dd>3.621</dd></div><div><dt>Custo/<wbr>visita</dt><dd>R$ 0,29</dd></div></dl></div>
+    </div>
+    <div class="card" style="margin-top:16px">
+      <div class="legend"><span><i style="background:var(--red)"></i>Conversas pelo Meta</span><span><i style="background:var(--navy)"></i>Contatos pelo Google</span></div>
+      <svg viewBox="0 0 760 260" width="100%" role="img" aria-label="Contatos por dia em outubro"><line x1="34" x2="754" y1="230.0" y2="230.0" stroke="var(--line)" stroke-width="1"/><text x="28" y="234.0" text-anchor="end" class="tick">0</text><line x1="34" x2="754" y1="176.0" y2="176.0" stroke="var(--line)" stroke-width="1"/><text x="28" y="180.0" text-anchor="end" class="tick">3</text><line x1="34" x2="754" y1="122.0" y2="122.0" stroke="var(--line)" stroke-width="1"/><text x="28" y="126.0" text-anchor="end" class="tick">6</text><line x1="34" x2="754" y1="68.0" y2="68.0" stroke="var(--line)" stroke-width="1"/><text x="28" y="72.0" text-anchor="end" class="tick">9</text><line x1="34" x2="754" y1="14.0" y2="14.0" stroke="var(--line)" stroke-width="1"/><text x="28" y="18.0" text-anchor="end" class="tick">12</text><rect x="359.2" y="14" width="394.8" height="216" fill="var(--soft)" opacity=".55"/><text x="365.2" y="28" class="tick2">Google no ar a partir de 15/10</text><rect x="38.4" y="212.0" width="14.4" height="18.0" rx="2" fill="var(--red)"><title>01/10 · 1 conversas pelo Meta</title></rect><text x="45.6" y="250" text-anchor="middle" class="tick">1</text><rect x="61.6" y="212.0" width="14.4" height="18.0" rx="2" fill="var(--red)"><title>02/10 · 1 conversas pelo Meta</title></rect><rect x="84.9" y="176.0" width="14.4" height="54.0" rx="2" fill="var(--red)"><title>03/10 · 3 conversas pelo Meta</title></rect><rect x="108.1" y="194.0" width="14.4" height="36.0" rx="2" fill="var(--red)"><title>04/10 · 2 conversas pelo Meta</title></rect><text x="138.5" y="250" text-anchor="middle" class="tick">5</text><rect x="154.5" y="122.0" width="14.4" height="108.0" rx="2" fill="var(--red)"><title>06/10 · 6 conversas pelo Meta</title></rect><rect x="177.8" y="212.0" width="14.4" height="18.0" rx="2" fill="var(--red)"><title>07/10 · 1 conversas pelo Meta</title></rect><rect x="201.0" y="194.0" width="14.4" height="36.0" rx="2" fill="var(--red)"><title>08/10 · 2 conversas pelo Meta</title></rect><rect x="247.4" y="212.0" width="14.4" height="18.0" rx="2" fill="var(--red)"><title>10/10 · 1 conversas pelo Meta</title></rect><text x="254.6" y="250" text-anchor="middle" class="tick">10</text><rect x="270.7" y="212.0" width="14.4" height="18.0" rx="2" fill="var(--red)"><title>11/10 · 1 conversas pelo Meta</title></rect><rect x="293.9" y="140.0" width="14.4" height="90.0" rx="2" fill="var(--red)"><title>12/10 · 5 conversas pelo Meta</title></rect><rect x="317.1" y="212.0" width="14.4" height="18.0" rx="2" fill="var(--red)"><title>13/10 · 1 conversas pelo Meta</title></rect><rect x="340.3" y="122.0" width="14.4" height="108.0" rx="2" fill="var(--red)"><title>14/10 · 6 conversas pelo Meta</title></rect><rect x="363.6" y="212.0" width="14.4" height="18.0" rx="2" fill="var(--red)"><title>15/10 · 1 conversas pelo Meta</title></rect><rect x="363.6" y="194.0" width="14.4" height="18.0" rx="2" fill="var(--navy)"><title>15/10 · 1 contatos pelo Google</title></rect><text x="370.8" y="250" text-anchor="middle" class="tick">15</text><rect x="386.8" y="176.0" width="14.4" height="54.0" rx="2" fill="var(--red)"><title>16/10 · 3 conversas pelo Meta</title></rect><rect x="386.8" y="158.0" width="14.4" height="18.0" rx="2" fill="var(--navy)"><title>16/10 · 1 contatos pelo Google</title></rect><rect x="433.3" y="212.0" width="14.4" height="18.0" rx="2" fill="var(--red)"><title>18/10 · 1 conversas pelo Meta</title></rect><rect x="433.3" y="194.0" width="14.4" height="18.0" rx="2" fill="var(--navy)"><title>18/10 · 1 contatos pelo Google</title></rect><rect x="456.5" y="176.0" width="14.4" height="54.0" rx="2" fill="var(--red)"><title>19/10 · 3 conversas pelo Meta</title></rect><rect x="456.5" y="158.0" width="14.4" height="18.0" rx="2" fill="var(--navy)"><title>19/10 · 1 contatos pelo Google</title></rect><rect x="479.7" y="68.0" width="14.4" height="162.0" rx="2" fill="var(--red)"><title>20/10 · 9 conversas pelo Meta</title></rect><rect x="479.7" y="50.0" width="14.4" height="18.0" rx="2" fill="var(--navy)"><title>20/10 · 1 contatos pelo Google</title></rect><text x="486.9" y="250" text-anchor="middle" class="tick">20</text><rect x="502.9" y="158.0" width="14.4" height="72.0" rx="2" fill="var(--red)"><title>21/10 · 4 conversas pelo Meta</title></rect><rect x="526.2" y="176.0" width="14.4" height="54.0" rx="2" fill="var(--red)"><title>22/10 · 3 conversas pelo Meta</title></rect><rect x="526.2" y="158.0" width="14.4" height="18.0" rx="2" fill="var(--navy)"><title>22/10 · 1 contatos pelo Google</title></rect><rect x="549.4" y="212.0" width="14.4" height="18.0" rx="2" fill="var(--red)"><title>23/10 · 1 conversas pelo Meta</title></rect><rect x="549.4" y="158.0" width="14.4" height="54.0" rx="2" fill="var(--navy)"><title>23/10 · 3 contatos pelo Google</title></rect><rect x="572.6" y="176.0" width="14.4" height="54.0" rx="2" fill="var(--red)"><title>24/10 · 3 conversas pelo Meta</title></rect><rect x="572.6" y="122.0" width="14.4" height="54.0" rx="2" fill="var(--navy)"><title>24/10 · 3 contatos pelo Google</title></rect><rect x="595.8" y="194.0" width="14.4" height="36.0" rx="2" fill="var(--red)"><title>25/10 · 2 conversas pelo Meta</title></rect><rect x="595.8" y="176.0" width="14.4" height="18.0" rx="2" fill="var(--navy)"><title>25/10 · 1 contatos pelo Google</title></rect><text x="603.0" y="250" text-anchor="middle" class="tick">25</text><rect x="619.1" y="212.0" width="14.4" height="18.0" rx="2" fill="var(--red)"><title>26/10 · 1 conversas pelo Meta</title></rect><rect x="619.1" y="158.0" width="14.4" height="54.0" rx="2" fill="var(--navy)"><title>26/10 · 3 contatos pelo Google</title></rect><rect x="642.3" y="176.0" width="14.4" height="54.0" rx="2" fill="var(--red)"><title>27/10 · 3 conversas pelo Meta</title></rect><rect x="642.3" y="140.0" width="14.4" height="36.0" rx="2" fill="var(--navy)"><title>27/10 · 2 contatos pelo Google</title></rect><rect x="665.5" y="122.0" width="14.4" height="108.0" rx="2" fill="var(--red)"><title>28/10 · 6 conversas pelo Meta</title></rect><rect x="688.7" y="194.0" width="14.4" height="36.0" rx="2" fill="var(--red)"><title>29/10 · 2 conversas pelo Meta</title></rect><rect x="688.7" y="140.0" width="14.4" height="54.0" rx="2" fill="var(--navy)"><title>29/10 · 3 contatos pelo Google</title></rect><rect x="712.0" y="212.0" width="14.4" height="18.0" rx="2" fill="var(--red)"><title>30/10 · 1 conversas pelo Meta</title></rect><rect x="712.0" y="194.0" width="14.4" height="18.0" rx="2" fill="var(--navy)"><title>30/10 · 1 contatos pelo Google</title></rect><rect x="735.2" y="212.0" width="14.4" height="18.0" rx="2" fill="var(--navy)"><title>31/10 · 1 contatos pelo Google</title></rect><text x="742.4" y="250" text-anchor="middle" class="tick">31</text></svg>
+      <p class="note">Com o Google no ar, a média passou de <b>2,1</b> para <b>3,9</b> contatos por dia. O Meta não veiculou em 31/10.</p>
+    </div>
+  </section>
+
+  <div class="sec-band" id="meta"><b>Meta Ads</b><span>Contato no WhatsApp</span></div>
+  <section style="padding-top:22px">
+    <div class="kpis" style="margin-top:0">
+      <div class="kpi main"><p class="k-lab">Conversas</p><p class="k-num">73</p><p class="k-note"><span class="delta bad">▼ 26%</span> <span class="vs">vs. setembro</span></p></div>
+      <div class="kpi main"><p class="k-lab">Custo por conversa</p><p class="k-num">R$ 10,78</p><p class="k-note"><span class="delta good">▼ 7%</span> <span class="vs">vs. setembro</span></p></div>
+      <div class="kpi"><p class="k-lab">Investimento</p><p class="k-num">R$ 787,28</p><p class="k-note"><span class="delta neutral">▼ 32%</span> <span class="vs">vs. setembro</span></p></div>
+      <div class="kpi"><p class="k-lab">Seguiram na conversa</p><p class="k-num">58%</p><p class="k-note">42 mandaram 2 mensagens ou mais</p></div>
+    </div>
+    <p class="note">Menos conversas que em setembro porque a verba de contato foi 32% menor; cada conversa saiu 7% mais barata.</p>
+  </section>
+
+  <section id="campanhas">
+    <p class="eyebrow">Campanhas</p>
+    <h2>Público frio e público morno</h2>
+    <p class="sub">A campanha “fria” fala com quem ainda não conhece a Dra. Greici. A “morna” volta a falar com quem já interagiu com o perfil.</p>
+    <div class="grid2">
+      <div class="card camp">
+        <span class="c-tag" style="background:#FCE6E4;color:#9E2422">Público frio · desde 03/10</span>
+        <h3>Novos tutores</h3>
+        <dl class="c-stats"><div><dt>Investimento</dt><dd>R$ 597,52</dd></div><div><dt>Conversas</dt><dd>58</dd></div><div><dt>Custo/<wbr>conversa</dt><dd>R$ 10,30</dd></div></dl>
+        <div class="fn-step"><div class="fn-bar" style="width:100.0%;background:var(--red)"><b>18.221</b></div><div class="fn-lab">Pessoas alcançadas</div></div><div class="fn-step"><div class="fn-bar" style="width:7.0%;background:var(--red)"><b>200</b></div><div class="fn-lab">Cliques no anúncio<span class="fn-rate">1,1% da etapa anterior</span></div></div><div class="fn-step"><div class="fn-bar" style="width:7.0%;background:var(--red)"><b>58</b></div><div class="fn-lab">Conversas iniciadas<span class="fn-rate">29,0% da etapa anterior</span></div></div><div class="fn-step"><div class="fn-bar" style="width:7.0%;background:var(--red)"><b>34</b></div><div class="fn-lab">Seguiram na conversa<span class="fn-rate">58,6% da etapa anterior</span></div></div>
+        <p class="note">Mais de 1 em cada 4 cliques virou conversa. Rodou só para mulheres, que são quase todo o público que chama.</p>
+      </div>
+      <div class="card camp">
+        <span class="c-tag" style="background:#E3EAF4;color:var(--navy)">Público morno · desde 06/10</span>
+        <h3>Quem já conhece o perfil</h3>
+        <dl class="c-stats"><div><dt>Investimento</dt><dd>R$ 150,02</dd></div><div><dt>Conversas</dt><dd>10</dd></div><div><dt>Custo/<wbr>conversa</dt><dd>R$ 15,00</dd></div></dl>
+        <div class="fn-step"><div class="fn-bar" style="width:100.0%;background:var(--navy)"><b>1.254</b></div><div class="fn-lab">Pessoas alcançadas</div></div><div class="fn-step"><div class="fn-bar" style="width:7.0%;background:var(--navy)"><b>35</b></div><div class="fn-lab">Cliques no anúncio<span class="fn-rate">2,8% da etapa anterior</span></div></div><div class="fn-step"><div class="fn-bar" style="width:7.0%;background:var(--navy)"><b>10</b></div><div class="fn-lab">Conversas iniciadas<span class="fn-rate">28,6% da etapa anterior</span></div></div><div class="fn-step"><div class="fn-bar" style="width:7.0%;background:var(--navy)"><b>6</b></div><div class="fn-lab">Seguiram na conversa<span class="fn-rate">60,0% da etapa anterior</span></div></div>
+        <p class="note"><b>Público saturado:</b> são só 1.254 pessoas, e cada uma viu o anúncio 5,46 vezes em média. A conversa saiu 46% mais cara que no frio.</p>
+      </div>
+    </div>
+    <p class="note">A campanha antiga de setembro ainda rodou de 1º a 3/10 e trouxe mais 5 conversas com R$ 39,74.</p>
+  </section>
+
+  <section id="publico">
+    <p class="eyebrow">Público</p>
+    <h2>Quem chama no WhatsApp é a tutora de 25 a 54 anos</h2>
+    <div class="insights">
+      <div class="ins"><p class="big">96%</p><p>das conversas do Meta vieram de <b>mulheres</b> (70 de 73).</p></div>
+      <div class="ins"><p class="big">88%</p><p>das conversas foram de pessoas de <b>25 a 54 anos</b> (64 de 73).</p></div>
+      <div class="ins"><p class="big">76%</p><p>das visitas ao perfil vieram de quem tem <b>18 a 34 anos</b>, público mais jovem do que o que chama no WhatsApp.</p></div>
+    </div>
+    <div class="grid2">
+      <div class="card">
+        <h3>Conversas por idade</h3>
+        <p class="note" style="margin:0 0 10px">Campanhas de contato · conversas · custo por conversa</p>
+        <div class="gb-row"><div class="gb-lab">18 a 24</div><div class="bar"><span class="fill" style="width:8.3%;background:var(--red)"></span><span class="val"><b>2</b> · R$ 8,55</span></div></div><div class="gb-row"><div class="gb-lab">25 a 34</div><div class="bar"><span class="fill" style="width:75.0%;background:var(--red)"></span><span class="val"><b>18</b> · R$ 9,77</span></div></div><div class="gb-row"><div class="gb-lab">35 a 44</div><div class="bar"><span class="fill" style="width:91.7%;background:var(--red)"></span><span class="val"><b>22</b> · R$ 11,47</span></div></div><div class="gb-row"><div class="gb-lab">45 a 54</div><div class="bar"><span class="fill" style="width:100.0%;background:var(--red)"></span><span class="val"><b>24</b> · R$ 12,72</span></div></div><div class="gb-row"><div class="gb-lab">55 a 64</div><div class="bar"><span class="fill" style="width:16.7%;background:var(--red)"></span><span class="val"><b>4</b> · R$ 7,85</span></div></div><div class="gb-row"><div class="gb-lab">65 +</div><div class="bar"><span class="fill" style="width:12.5%;background:var(--red)"></span><span class="val"><b>3</b> · R$ 1,76</span></div></div>
+        <p class="note">25 a 34 anos teve o menor custo entre as faixas com volume (R$ 9,77).</p>
+      </div>
+      <div class="card">
+        <h3>Visitas ao perfil por idade</h3>
+        <p class="note" style="margin:0 0 10px">Campanha de seguidores · visitas ao Instagram</p>
+        <div class="gb-row"><div class="gb-lab">18 a 24</div><div class="bar"><span class="fill" style="width:76.0%;background:var(--sky)"></span><span class="val"><b>1.189</b> visitas</span></div></div><div class="gb-row"><div class="gb-lab">25 a 34</div><div class="bar"><span class="fill" style="width:100.0%;background:var(--sky)"></span><span class="val"><b>1.564</b> visitas</span></div></div><div class="gb-row"><div class="gb-lab">35 a 44</div><div class="bar"><span class="fill" style="width:29.2%;background:var(--sky)"></span><span class="val"><b>457</b> visitas</span></div></div><div class="gb-row"><div class="gb-lab">45 a 54</div><div class="bar"><span class="fill" style="width:15.3%;background:var(--sky)"></span><span class="val"><b>239</b> visitas</span></div></div><div class="gb-row"><div class="gb-lab">55 a 64</div><div class="bar"><span class="fill" style="width:5.5%;background:var(--sky)"></span><span class="val"><b>86</b> visitas</span></div></div><div class="gb-row"><div class="gb-lab">65 +</div><div class="bar"><span class="fill" style="width:4.0%;background:var(--sky)"></span><span class="val"><b>62</b> visitas</span></div></div>
+        <p class="note">A visita é barata entre os mais jovens, mas eles quase não viram clientes. Vale aproximar este público das tutoras que já chamam.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="sec-band" id="seguidores"><b>Meta Ads</b><span>Seguidores no Instagram</span></div>
+  <section style="padding-top:22px">
+    <div class="kpis" style="margin-top:0">
+      <div class="kpi main"><p class="k-lab">Visitas ao perfil</p><p class="k-num">3.621</p><p class="k-note"><span class="delta good">▲ 650%</span> <span class="vs">vs. setembro</span></p></div>
+      <div class="kpi main"><p class="k-lab">Custo por visita</p><p class="k-num">R$ 0,29</p><p class="k-note"><span class="delta good">▼ 43%</span> <span class="vs">vs. setembro</span></p></div>
+      <div class="kpi"><p class="k-lab">Pessoas alcançadas</p><p class="k-num">115.302</p><p class="k-note">202.158 exibições</p></div>
+      <div class="kpi"><p class="k-lab">Investimento</p><p class="k-num">R$ 1.036,98</p><p class="k-note">primeiro mês completo</p></div>
+    </div>
+    <p class="note">Os Stories do Instagram trouxeram 91% das visitas (3.279), a R$ 0,26 cada. O Meta mede a visita ao perfil; quantas viraram seguidores é contado no próprio Instagram.</p>
+  </section>
+
+  <section id="criativos">
+    <p class="eyebrow">Criativos</p>
+    <h2>Os anúncios que mais trouxeram resultado</h2>
+    <p class="sub">“Assistiram 15s+” é quem viu pelo menos 15 segundos do vídeo ou ele inteiro.</p>
+    <div class="crs"><article class="cr"><div class="cr-thumb"><img src="https://scontent-fra3-1.xx.fbcdn.net/v/t15.5256-10/739335388_1884095018861015_3740881955533459311_n.jpg?_nc_cat=106&amp;ccb=1-7&amp;_nc_eui2=AeEyhRxODwxTYJuGNLA46Fj423XCj_PCpeHbdcKP88Kl4fnGeQwqjVXv7o5lRfNJ4Ocsxp5rr-ikCWD3QdkLwJGG&amp;_nc_ohc=k29CaMzNEYYQ7kNvwGh2iMC&amp;_nc_oc=Adrkevt7zbJm1YLVsiJQS-D9gy3QvlCezFrrOiIvUhAufdqmqaaReKyREu0ZfngvI-s&amp;_nc_zt=23&amp;_nc_ht=scontent-fra3-1.xx&amp;edm=AEuWsiQEAAAA&amp;_nc_gid=bzaCLK-ggme3r6pgF6S63A&amp;_nc_tpa=Q5bMBQJRpEUxF6mZwFpZet7eGjwyT-qLszV2sLR02AouNE_p_mQ9rpO_WQLz9DVO12OHczfwMQSzJ0IucQ&amp;stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&amp;ur=5fad0e&amp;_nc_sid=58080a&amp;oh=00_AQReDcdSAboBixNX1O3P4MQmF8CZM1dyu0llZ1lfJhp1vQ&amp;oe=6AEFA00C" alt="Prévia do anúncio AD04 · Rotina" loading="lazy" onerror="this.remove()"><span class="cr-ph">AD04 · Rotina</span><span class="cr-tag">Melhor do mês</span></div>
+<div class="cr-body"><p class="cr-camp">Contato no WhatsApp</p><h4>AD04 · Rotina</h4><p class="cr-copy">“Cada atendimento é diferente, mas o objetivo é sempre o mesmo…”</p><dl class="cr-stats"><div><dt>Investimento</dt><dd>R$ 457,16</dd></div><div><dt>Conversas</dt><dd>47</dd></div><div><dt>Custo/<wbr>conversa</dt><dd>R$ 9,73</dd></div><div><dt>Assistiram 15s+</dt><dd>1.472</dd></div></dl><p class="cr-foot">64% de todas as conversas do Meta</p></div></article><article class="cr"><div class="cr-thumb"><img src="https://scontent-fra5-1.xx.fbcdn.net/v/t15.5256-10/740821476_1031380132946563_215137171508807093_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_eui2=AeFlomeqvigzgHOqaUFaTKgg4kBwbVmZ89biQHBtWZnz1oI-omopvGYTkXHpbJm7EDysepsrqFPZyTGsof_C3oZq&amp;_nc_ohc=Jv1s1j5W838Q7kNvwFsuM0c&amp;_nc_oc=Adp_ecpjlfFJJFLKws-y_a8OCGRy6lz5OYHv0sywy7gFCDOGo9kNqq0prD3jRGXL3g0&amp;_nc_zt=23&amp;_nc_ht=scontent-fra5-1.xx&amp;edm=AEuWsiQEAAAA&amp;_nc_gid=bzaCLK-ggme3r6pgF6S63A&amp;_nc_tpa=Q5bMBQI3RCvi4n56Bhz_v6U0yqmXBCduUE-DkyviHw66P2LKvND0Kc_fKQ18QvC-oJ_5vWSgHlK-Q0SuXw&amp;stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&amp;ur=5fad0e&amp;_nc_sid=58080a&amp;oh=00_AQShQVNixLNQTpypiQ5J7-9_zgfD86hPJETm1EWmVNQ5Dw&amp;oe=6AEF94FB" alt="Prévia do anúncio AD03 · Atendo a sua região" loading="lazy" onerror="this.remove()"><span class="cr-ph">AD03 · Atendo a sua região</span></div>
+<div class="cr-body"><p class="cr-camp">Contato no WhatsApp</p><h4>AD03 · Atendo a sua região</h4><p class="cr-copy">“Atendo em Vespasiano, Belo Horizonte e diversas cidades da região…”</p><dl class="cr-stats"><div><dt>Investimento</dt><dd>R$ 294,01</dd></div><div><dt>Conversas</dt><dd>24</dd></div><div><dt>Custo/<wbr>conversa</dt><dd>R$ 12,25</dd></div><div><dt>Assistiram 15s+</dt><dd>526</dd></div></dl><p class="cr-foot">Principal anúncio do público morno</p></div></article><article class="cr"><div class="cr-thumb"><img src="https://scontent-fra5-1.xx.fbcdn.net/v/t15.5256-10/839692355_1625093422735952_2548322047882558945_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_eui2=AeFN3qIEDvxNHol0XCa9J32pAUCNI6eUC2oBQI0jp5QLaqI56RY1-xlRdp6W4eAD5Y1nX58nq5_krHYZzeHchyi9&amp;_nc_ohc=yHFt4gY1ONcQ7kNvwFkls2v&amp;_nc_oc=Adp_l0zUnJZh7lZYhcidmGNstq7-sHWiUmN-k7hClWRYSiIAGMhTHHhkxKSoENYEcZ4&amp;_nc_zt=23&amp;_nc_ht=scontent-fra5-1.xx&amp;edm=AEuWsiQEAAAA&amp;_nc_gid=hAt9pJ1VeQnnqB7nb1cO0w&amp;_nc_tpa=Q5bMBQLgqUXNXEm4mx08tkJVeVeau7VhkfsSqZZNjIgZPciAfuVZf74xI-LKAzGxI8D6mqXWHzZMFJA9DQ&amp;stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&amp;ur=a7ce7f&amp;_nc_sid=58080a&amp;oh=00_AQTzdc7XFMO7RI4V2BdZJpLhTTVVzkpULnYwB03Z5K5jFw&amp;oe=6AEFB1A7" alt="Prévia do anúncio AD05 · Rotina corrida" loading="lazy" onerror="this.remove()"><span class="cr-ph">AD05 · Rotina corrida</span><span class="cr-tag">Mais visitas</span></div>
+<div class="cr-body"><p class="cr-camp">Seguidores</p><h4>AD05 · Rotina corrida</h4><p class="cr-copy">“A rotina corrida faz muitos responsáveis atrasarem a vacinação…”</p><dl class="cr-stats"><div><dt>Investimento</dt><dd>R$ 617,97</dd></div><div><dt>Visitas ao perfil</dt><dd>2.346</dd></div><div><dt>Custo/<wbr>visita</dt><dd>R$ 0,26</dd></div><div><dt>Assistiram 15s+</dt><dd>2.295</dd></div></dl><p class="cr-foot">65% das visitas ao perfil do mês</p></div></article><article class="cr"><div class="cr-thumb"><img src="https://scontent-fra3-1.xx.fbcdn.net/v/t15.5256-10/836882740_2324125725067175_3017273954800176608_n.jpg?_nc_cat=106&amp;ccb=1-7&amp;_nc_eui2=AeGorUXfaP8pYlBGpSV_P7l7A8aFP_uccJQDxoU_-5xwlClN1buxLIJBwKKZCYiigjz1-XVVehpJ8fCskdaBRuRE&amp;_nc_ohc=LPlwxCSo79EQ7kNvwGkOuJo&amp;_nc_oc=Adr623a7enIEoDEbiXojCPm25Hu0nBcGKiOdIbvEKwytG0JHvRcogDk8LIHOs5cxtFI&amp;_nc_zt=23&amp;_nc_ht=scontent-fra3-1.xx&amp;edm=AEuWsiQEAAAA&amp;_nc_gid=hAt9pJ1VeQnnqB7nb1cO0w&amp;_nc_tpa=Q5bMBQIMo19Ilzd0tQep9WNENZ1UnyBI_PUGV8qCjjljqOQTvHYF3YpvZ6L6qvFtnMywY0Gp_aroINE8uw&amp;stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&amp;ur=a7ce7f&amp;_nc_sid=58080a&amp;oh=00_AQTIIAQb8CBBAiWTxGLIM87AN1WqHJajHzyBh_8WHk_h7A&amp;oe=6AEFB3A1" alt="Prévia do anúncio AD04 · Parvovirose" loading="lazy" onerror="this.remove()"><span class="cr-ph">AD04 · Parvovirose</span></div>
+<div class="cr-body"><p class="cr-camp">Seguidores</p><h4>AD04 · Parvovirose</h4><p class="cr-copy">“A parvovirose é uma doença viral grave, altamente contagiosa…”</p><dl class="cr-stats"><div><dt>Investimento</dt><dd>R$ 286,67</dd></div><div><dt>Visitas ao perfil</dt><dd>998</dd></div><div><dt>Custo/<wbr>visita</dt><dd>R$ 0,29</dd></div><div><dt>Assistiram 15s+</dt><dd>887</dd></div></dl><p class="cr-foot">Conteúdo educativo sobre vacinação</p></div></article></div>
+    <p class="note">O vídeo da rotina de atendimento converteu melhor que o de “mais de um pet” (R$ 18,05 por conversa, só 2 conversas). Nos seguidores, os conteúdos sobre vacinação tiveram visita mais barata que o institucional “Pet família” (R$ 0,48).</p>
+  </section>
+
+  <div class="sec-band g" id="google"><b>Google Ads</b><span>Rede de pesquisa · 15 a 31/10</span></div>
+  <section style="padding-top:22px">
+    <div class="kpis" style="margin-top:0">
+      <div class="kpi main"><p class="k-lab">Contatos no WhatsApp</p><p class="k-num">23</p><p class="k-note">38% de quem clicou</p></div>
+      <div class="kpi main"><p class="k-lab">Custo por contato</p><p class="k-num">R$ 33,75</p><p class="k-note">17 dias no ar</p></div>
+      <div class="kpi"><p class="k-lab">Cliques</p><p class="k-num">60</p><p class="k-note">CTR 9,1% · CPC R$ 12,94</p></div>
+      <div class="kpi"><p class="k-lab">Presença nas buscas</p><p class="k-num">77%</p><p class="k-note">no topo da página em 71%</p></div>
+    </div>
+    <div class="insights" style="margin-top:16px">
+      <div class="ins"><p class="big">38%</p><p>de quem clicou no anúncio <b>chamou no WhatsApp</b> pelo site. Quem pesquisa já está pronto para agendar.</p></div>
+      <div class="ins"><p class="big">R$ 22,54</p><p>por contato de 23 a 31/10, contra <b>R$ 65,53</b> na primeira semana. A campanha aprendeu rápido.</p></div>
+      <div class="ins"><p class="big">17%</p><p>das buscas foram perdidas por <b>classificação do anúncio</b>, e só 4% por orçamento.</p></div>
+    </div>
+  </section>
+
+  <section id="palavras" style="padding-top:6px">
+    <p class="eyebrow">Palavras-chave</p>
+    <h2>O que os tutores pesquisaram</h2>
+    <p class="sub">Da maior para a menor verba. Em destaque, a de menor custo por contato. Contatos fracionados acontecem quando o Google divide o crédito entre duas palavras.</p>
+    <div class="card"><div style="overflow-x:auto"><table>
+      <thead><tr><th>Palavra-chave</th><th class="opt">Tipo</th><th>Cliques</th><th>Custo</th><th>Contatos</th><th>Custo/contato</th></tr></thead>
+      <tbody><tr><td>"veterinário em casa"</td><td class="opt">Frase</td><td>21</td><td>R$ 289,79</td><td>9</td><td><b>R$ 32,20</b></td></tr><tr class=best><td>"veterinário a domicílio bh"</td><td class="opt">Frase</td><td>12</td><td>R$ 127,90</td><td>7</td><td><b>R$ 18,27</b></td></tr><tr><td>"veterinaria a domicilio"</td><td class="opt">Frase</td><td>6</td><td>R$ 74,57</td><td>3,5</td><td><b>R$ 21,31</b></td></tr><tr><td>"veterinário domiciliar"</td><td class="opt">Frase</td><td>6</td><td>R$ 72,24</td><td>0</td><td><b>—</b></td></tr><tr><td>[veterinário a domicílio]</td><td class="opt">Exata</td><td>2</td><td>R$ 49,91</td><td>0</td><td><b>—</b></td></tr><tr><td>"veterinário a domicílio"</td><td class="opt">Frase</td><td>4</td><td>R$ 40,27</td><td>2</td><td><b>R$ 20,14</b></td></tr><tr><td>"atendimento veterinário domiciliar"</td><td class="opt">Frase</td><td>3</td><td>R$ 35,68</td><td>1</td><td><b>R$ 35,68</b></td></tr><tr><td>"consulta veterinária em casa"</td><td class="opt">Frase</td><td>1</td><td>R$ 32,16</td><td>0</td><td><b>—</b></td></tr><tr><td>"consulta veterinária domiciliar"</td><td class="opt">Frase</td><td>2</td><td>R$ 26,34</td><td>0</td><td><b>—</b></td></tr><tr><td>"vacina cachorro em casa"</td><td class="opt">Frase</td><td>2</td><td>R$ 15,90</td><td>0</td><td><b>—</b></td></tr><tr><td>[consulta veterinária em casa]</td><td class="opt">Exata</td><td>1</td><td>R$ 11,54</td><td>0,5</td><td><b>R$ 23,08</b></td></tr></tbody></table></div>
+      <p class="note">“veterinário a domicílio bh” trouxe 7 contatos a R$ 18,27: quem coloca a cidade na busca converte mais. Já R$ 196,55 (25% da verba) foram para palavras sem contato, como “veterinário domiciliar” (R$ 72,24). Entre as buscas apareceram nomes de outras clínicas, como “life vet lagoa santa” e “casal vet”.</p>
+    </div>
+  </section>
+
+  <section id="analise">
+    <div class="analysis">
+      <p class="eyebrow">Análise e próximos passos</p>
+      <h2>O que aprendemos em outubro</h2>
+      <p>O Google estreou bem: em 17 dias trouxe 23 contatos e, na segunda metade, o custo caiu para R$ 22,54. No Meta, a campanha para público frio é a base do volume, com conversa a R$ 10,30, enquanto o público morno ficou pequeno e cansado. A campanha de seguidores ficou muito mais barata que em setembro, mas fala com um público mais jovem do que o cliente da Refúgio Vet.</p>
+      <h3>Pontos de atenção</h3>
+      <ul>
+        <li><b>Público morno saturado.</b> 1.254 pessoas vendo o mesmo anúncio 5,46 vezes.</li>
+        <li><b>Seguidores fora do perfil de cliente.</b> 76% das visitas vêm de 18 a 34 anos; quem agenda tem 25 a 54.</li>
+        <li><b>Verba do Google em palavras sem retorno.</b> R$ 196,55 em palavras que não geraram contato.</li>
+        <li><b>Contato não é consulta.</b> 31 das 73 conversas do Meta pararam na primeira mensagem. Precisamos saber quantas viraram agendamento.</li>
+      </ul>
+      <h3>Plano de ação para novembro</h3>
+      <ol>
+        <li><b>Renovar e ampliar o público morno</b><span class="prio alta">Alta</span><br>Incluir quem visitou o perfil nos últimos 30 dias (as 3.621 visitas da campanha de seguidores alimentam esse público) e trocar os criativos para baixar a frequência.</li>
+        <li><b>Mais verba no público frio, com o vídeo da rotina</b><span class="prio alta">Alta</span><br>É a campanha com mais conversas e menor custo. Criar 2 variações do AD04 · Rotina e pausar o “mais de um pet”.</li>
+        <li><b>Mudar a estratégia de lances do Google</b><span class="prio alta">Alta</span><br>Com 23 contatos registrados, já dá para trocar “Maximizar cliques” por “Maximizar conversões” e deixar o Google buscar quem chama no WhatsApp.</li>
+        <li><b>Limpar e ampliar as palavras do Google</b><span class="prio media">Média</span><br>Pausar ou reduzir lance em “veterinário domiciliar” e [veterinário a domicílio], negativar nomes de outras clínicas e criar variações com cidade: Vespasiano, Lagoa Santa, Santa Luzia e BH.</li>
+        <li><b>Aproximar a campanha de seguidores do cliente</b><span class="prio media">Média</span><br>Testar idade a partir de 25 anos e priorizar mulheres, mantendo os conteúdos de vacinação, que tiveram a visita mais barata.</li>
+        <li><b>Registrar os agendamentos</b><span class="prio media">Média</span><br>Marcar no WhatsApp de onde veio cada tutor e se agendou. Assim o próximo relatório mostra o custo por consulta, não só por conversa.</li>
+      </ol>
+    </div>
+  </section>
+</main>
+
+<footer>
+  Dados do Meta Ads (conta CA1 · Consultas) e do Google Ads (Refúgio Vet), de 1º a 31 de outubro de 2026. O Google Ads começou a veicular em 15/10.<br>
+  “Conversas” no Meta são conversas iniciadas no WhatsApp pelos anúncios. “Contatos” no Google são cliques nos botões de WhatsApp do site. Comparações com setembro consideram as campanhas equivalentes.
+</footer>
+</body></html>
